@@ -1,0 +1,21 @@
+はじめに
+　本zipファイルは原作者外によるメンテナンスを含む再配布バージョンです
+　原作者による元バージョンは以下URLで配布されています
+　Battle Maid MOD(https://www.axfc.net/u/3925615)
+　本zipに含まれるファイルにて発生したエラーは、Discord(https://discordapp.com/invite/wawQKMK)へご連絡ください
+　動作確認は開発版#10622でおこなわれました
+
+ライセンス
+　原作者様の記述であるBattle_Maid.txtに書かれた内容に準拠します
+
+本zipファイルの改変部分
+　・本体側の変更に対応するため、monsters.jsonに"harvest":"exempt"を追加 (2019/08/27)
+　・本体側の変更に対応するため、martialarts.jsonに"initiate":を追加 (2019/08/27)
+　・maid_mutations.jsonを他modと競合しにくい記述になるよう変更 (2019/11/25)
+　・燻製人肉のIDが廃止されたので対応(燻製は材料問わずmeat_smokedとして扱われ、
+　　人肉か否かはフラグで管理されるようになった)(2019/12/10)
+　・monsterのHP再生の記述方法が変わったので対応(2019/12/10)
+　・表記方法が変わった為、メイドクロウのリロード時間を再設定
+　・エラーになっていた文字色を再設定(2019/12/31)
+　・Refactor loading bonuses対応(https://github.com/CleverRaven/Cataclysm-DDA/pull/36562)
+　・bullet damage type対応(https://github.com/CleverRaven/Cataclysm-DDA/pull/38912)

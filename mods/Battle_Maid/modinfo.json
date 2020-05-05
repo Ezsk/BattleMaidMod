@@ -1,0 +1,11 @@
+{
+  "type": "MOD_INFO",
+  "mod_type": "SUPPLEMENTAL",
+  "ident": "battle_maid",
+  "name": "Battle Maid",
+  "dependencies": [
+    "dda"
+  ],
+  "description": "戦うメイドさんの為のmodです。",
+  "path": ""
+}

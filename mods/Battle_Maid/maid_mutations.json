@@ -1,0 +1,234 @@
+[
+  {
+    "type": "mutation",
+    "id": "THRESH_MAID",
+    "name": "メイド",
+    "points": 1,
+    "description": "あなたは主に忠実なメイドです。主の為ならば、その全身全霊を以って尽くすでしょう。",
+    "valid": false,
+    "purifiable": false,
+    "threshold": true
+  },
+  {
+    "type": "mutation",
+    "id": "LIGHTSTEP",
+    "copy-from": "LIGHTSTEP",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "CLUMSY",
+    "copy-from": "CLUMSY",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "PRETTY",
+    "copy-from": "PRETTY",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "BEAUTIFUL",
+    "copy-from": "BEAUTIFUL",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "BEAUTIFUL2",
+    "copy-from": "BEAUTIFUL2",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "BEAUTIFUL3",
+    "copy-from": "BEAUTIFUL3",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "DEX_UP_3",
+    "copy-from": "DEX_UP_3",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "INT_UP_2",
+    "copy-from": "INT_UP_2",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "PACKMULE",
+    "copy-from": "PACKMULE",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "STYLISH",
+    "copy-from": "STYLISH",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "DEFT",
+    "copy-from": "DEFT",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "SQUEAMISH",
+    "copy-from": "SQUEAMISH",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "ANTIJUNK",
+    "copy-from": "ANTIJUNK",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "ADDICTIVE",
+    "copy-from": "ADDICTIVE",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "ANIMALDISCORD",
+    "copy-from": "ANIMALDISCORD",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "MAID_ANKI",
+    "name": "暗器",
+    "points": 6,
+    "mixed_effect": true,
+    "description": "あなたは常に暗器を隠し持っています。不用心に至近距離まで近づいた犠牲者は、その存在に気づくことなく得物に貫かれるでしょう。",
+    "prereqs": [ "DEFT" ],
+    "category": [ "MAID" ],
+    "valid": false,
+    "attacks": {
+      "attack_text_u": "あなたは隠し持つ暗器で %s を突き刺した",
+      "attack_text_npc": "%1$s は隠し持つ暗器で %2$s を突き刺した",
+      "chance": 20,
+      "base_damage": { "damage_type": "stab", "amount": 12 }
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "MAID_DOJI1",
+    "name": "ドジっ子メイド(レベル1)",
+    "points": 2,
+    "description": "あなたはちょっとドジっ子です。メイドとしては残念です。器用-1",
+    "changes_to": [ "MAID_DOJI2" ],
+    "category": [ "MAID" ],
+    "cancels": [ "MAID_1", "MAID_2", "MAID_3" ],
+    "valid": false,
+    "passive_mods": { "dex_mod": -1 }
+  },
+  {
+    "type": "mutation",
+    "id": "MAID_DOJI2",
+    "name": "ドジっ子メイド(レベル2)",
+    "points": 4,
+    "description": "あなたは想像を絶するドジっ子です。あなたが高価な調度品の側を通るだけで物理変化が起こって破壊されます。器用-3",
+    "prereqs": [ "MAID_DOJI1" ],
+    "changes_to": [ "MAID_DOJI3" ],
+    "category": [ "MAID" ],
+    "valid": false,
+    "passive_mods": { "dex_mod": -3 }
+  },
+  {
+    "type": "mutation",
+    "id": "MAID_DOJI3",
+    "name": "致命的なドジっ子メイド",
+    "points": 8,
+    "threshreq": [ "THRESH_MAID" ],
+    "description": "あなたは致命的なまでにドジっ子です。その矛先が向けられたものは、己の不運を呪う暇もなく致命的な人災に沈むでしょう。器用-4、低確率で致命的な追加攻撃",
+    "prereqs": [ "MAID_DOJI2" ],
+    "category": [ "MAID" ],
+    "valid": false,
+    "passive_mods": { "dex_mod": -4 },
+    "attacks": {
+      "attack_text_u": "おおっと！またやってしまいました %s に",
+      "attack_text_npc": "%1$s の手元が狂ってとんでもない被害が %2$s を襲う",
+      "chance": 100,
+      "base_damage": { "damage_type": "bash", "amount": 250 }
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "MAID_1",
+    "name": "メイド訓練(レベル1)",
+    "points": 2,
+    "description": "あなたは熟練のメイド、あるいはそれに相応する能力の持ち主です。より効率的に多くの雑事をこなせます。器用+2、知性+1",
+    "changes_to": [ "MAID_2" ],
+    "category": [ "MAID" ],
+    "cancels": [ "MAID_DOJI1", "MAID_DOJI2", "MAID_DOJI3" ],
+    "valid": false,
+    "passive_mods": { "dex_mod": 2, "int_mod": 1 }
+  },
+  {
+    "type": "mutation",
+    "id": "MAID_2",
+    "name": "メイド訓練(レベル2)",
+    "points": 4,
+    "description": "あなたは上級のメイド、あるいはそれに相応する能力の持ち主です。時代が時代ならメイド達の長として君臨できていたかもしれません。器用+3、知性+2",
+    "prereqs": [ "MAID_1" ],
+    "changes_to": [ "MAID_3" ],
+    "category": [ "MAID" ],
+    "valid": false,
+    "passive_mods": { "dex_mod": 3, "int_mod": 2 }
+  },
+  {
+    "type": "mutation",
+    "id": "MAID_3",
+    "name": "バトルメイド",
+    "points": 8,
+    "threshreq": [ "THRESH_MAID" ],
+    "description": "主に仕える者として、身の回りの世話を行うだけでなく、厳しい戦闘訓練も積んでいます。筋力+2、器用+4、知性+2、全動作制限-5",
+    "prereqs": [ "MAID_2" ],
+    "category": [ "MAID" ],
+    "passive_mods": { "str_mod": 2, "dex_mod": 4, "int_mod": 2 },
+    "encumbrance_always": [
+      [ "TORSO", -5 ],
+      [ "HEAD", -5 ],
+      [ "ARM_L", -5 ],
+      [ "ARM_R", -5 ],
+      [ "HAND_L", -5 ],
+      [ "HAND_R", -5 ],
+      [ "LEG_L", -5 ],
+      [ "LEG_R", -5 ],
+      [ "FOOT_L", -5 ],
+      [ "FOOT_R", -5 ]
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "HUNGER",
+    "copy-from": "HUNGER",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "FASTHEALER",
+    "copy-from": "FASTHEALER",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "MAID_TEKELI",
+    "name": "てけり・り",
+    "points": 10,
+    "description": "私達はかつて一つの種でした。私達は仕える為に生まれました。私達は皆、従者でした。攻撃耐性+8、治癒力強化",
+    "prereqs": [ "HUNGER" ],
+    "prereqs2": [ "FASTHEALER" ],
+    "threshreq": [ "THRESH_MAID" ],
+    "category": [ "MAID" ],
+    "armor": [ { "parts": "ALL", "bash": 8, "cut": 8, "stab": 8 } ],
+    "healing_awake": 4.45,
+    "healing_resting": 4.45
+  }
+]

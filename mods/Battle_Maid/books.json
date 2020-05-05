@@ -1,0 +1,22 @@
+[
+  {
+    "id": "book_shoggoth",
+    "type": "BOOK",
+    "category": "books",
+    "max_level": 9,
+    "symbol": "?",
+    "color": "green",
+    "name": "書き殴り(shoggoth)",
+    "name_plural": "書き殴り(shoggoth)",
+    "description": "表紙には辛うじて識別できる文字でshoggothと題されています。その内容は意味不明な図形や数式、見たこともない言語、そして名状し難い冒涜的な怪物の絵が無秩序に乱雑な筆跡で描かれています。常人には理解し難い、網膜に焼き付くような狂気的光景は思わず目を背けたくなるようなものでしたが、まるで魅入られたかのように身体が勝手にページを捲って行きます。すると不思議な事に自然と内容が頭に入ってきました。どうやらこれはshoggothと呼ばれる従者を造るためのレシピのようなモノのようです。",
+    "price": 20000,
+    "material": "paper",
+    "weight": 150,
+    "volume": 1,
+    "fun": -50,
+    "intelligence": 13,
+    "time": 55,
+    "skill": "cooking",
+    "required_level": 9
+  }
+]

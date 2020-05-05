@@ -1,0 +1,11 @@
+[
+  {
+    "type": "mutation_category",
+    "id": "MAID",
+    "threshold_mut": "THRESH_MAID",
+    "name": "メイド",
+    "mutagen_message": "身体が主従関係を求めて熱く火照ってきました。",
+    "iv_message": "身体が作り変えられていくのを感じます。きっとこれで、もっとうまく奉仕できます。",
+    "memorial_message": "もっと奉仕したい……"
+  }
+]

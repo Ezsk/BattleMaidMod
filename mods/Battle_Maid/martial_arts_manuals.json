@@ -1,0 +1,17 @@
+[
+  {
+    "id": "manual_maid",
+    "type": "GENERIC",
+    "category": "books",
+    "symbol": "?",
+    "color": "green",
+    "name": "主人を守る101の方法",
+    "description": "メイドの心得がずらりと書き並んでいます。その中には実用的な格闘術のページが含まれているようです。",
+    "price": 20000,
+    "material": "paper",
+    "weight": 150,
+    "volume": 1,
+    "use_action": "MA_MANUAL",
+    "book_data": { "max_level": 0, "intelligence": 0, "time": 10, "fun": 0, "skill": "none", "required_level": 0, "chapters": 0 }
+  }
+]

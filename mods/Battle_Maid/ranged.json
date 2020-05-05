@@ -1,0 +1,29 @@
+[
+  {
+    "id": "blazingstar",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "yellow",
+    "name": "Blazing Star",
+    "description": "『Blazing Star』の銘が彫られた、異界から召喚された短弓です。何の変哲もないただの短弓に見えますが、これを握った射手はまるで思考を上書きされたかのように狂乱に飲まれ、周囲を顧みない射撃を行うようになります。Maid Pointを使用して炎の矢を放ちます。",
+    "price": 16000,
+    "material": "wood",
+    "flags": [ "FIRE_TWOHAND", "STR_DRAW", "PRIMITIVE_RANGED_WEAPON" ],
+    "skill": "archery",
+    "min_strength": 4,
+    "ammo": "maid_point",
+    "weight": 340,
+    "volume": 6,
+    "bashing": 6,
+    "armor_data": { "covers": [ "TORSO" ], "coverage": 5, "material_thickness": 1, "encumbrance": 20 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 3 },
+    "range": 10,
+    "dispersion": 210,
+    "durability": 6,
+    "clip_size": 10,
+    "reload": 60,
+    "ammo_effects": [ "FLAME", "INCENDIARY", "NEVER_MISFIRES" ],
+    "modes": [ [ "DEFAULT", "auto", 10 ] ],
+    "valid_mod_locations": [ [ "underbarrel", 1 ], [ "sights", 1 ], [ "accessories", 2 ] ]
+  }
+]

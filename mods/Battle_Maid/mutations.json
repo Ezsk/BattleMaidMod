@@ -1,0 +1,33 @@
+[
+  {
+    "type": "mutation",
+    "id": "MARTIAL_ARTS_maid",
+    "name": "メイド格闘術",
+    "points": 3,
+    "description": "一流の従者として暗殺の心得を学んでいます。",
+    "starting_trait": true,
+    "initial_ma_styles": [ "style_maid" ],
+    "valid": false
+  },
+  {
+    "type": "mutation",
+    "id": "PROF_MA_MAID",
+    "name": "メイド格闘術",
+    "points": 0,
+    "description": "一流の従者として暗殺の心得を学んでいます。",
+    "initial_ma_styles": [ "style_maid" ],
+    "valid": false,
+    "purifiable": false,
+    "profession": true
+  },
+  {
+    "type": "mutation",
+    "id": "PROF_NEKOMIMI",
+    "name": "猫の特徴",
+    "points": 0,
+    "description": "変異により猫の特徴を備えています。",
+    "valid": false,
+    "purifiable": false,
+    "profession": true
+  }
+]

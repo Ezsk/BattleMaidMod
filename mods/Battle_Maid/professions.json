@@ -1,0 +1,75 @@
+[
+  {
+    "type": "profession",
+    "ident": "battle_maid",
+    "name": { "male": "バトラー", "female": "バトルメイド" },
+    "description": "主人に仕える為、従者としての作法の他に多くの戦闘訓練を積んできました。終末が訪れ、異形の者達の悪意が主人に向けられています。真の忠誠が問われる時です。",
+    "points": 8,
+    "traits": [ "PROF_MA_MAID" ],
+    "skills": [
+      { "level": 5, "name": "cooking" },
+      { "level": 4, "name": "tailor" },
+      { "level": 4, "name": "driving" },
+      { "level": 4, "name": "throw" },
+      { "level": 3, "name": "melee" },
+      { "level": 3, "name": "unarmed" },
+      { "level": 3, "name": "dodge" }
+    ],
+    "items": {
+      "both": [
+        "pocketwatch",
+        "knife_butter",
+        "gloves_leather",
+        "tool_belt",
+        "knit_scarf",
+        "maid_cloak_off",
+        "assassins_throwing_dagger",
+        "master_doll",
+        "maid_bell"
+      ],
+      "male": [ "briefs", "socks", "dress_shoes", "tux" ],
+      "female": [ "bra", "tights", "boots", "maid_dress", "maid_hat" ]
+    }
+  },
+  {
+    "type": "profession",
+    "ident": "shoggoth_master",
+    "name": { "male": "ショゴスの主人", "female": "ショゴスの主人" },
+    "description": "私にはメイドがいる。生来病弱な私の為にと父が送り届けてくれた子だ。気立てが良く容姿端麗、更には･･･あーっと･･･戦闘能力も高い。だが、彼女は「ご主人様っ！邪魔者は全て始末しました！ベッドメイキングも完璧です！あとは明るい未来に向けて私とご主人様の子供を作りましょう！」･･･少し変わり者だ。",
+    "points": 8,
+    "traits": [ "FLIMSY2" ],
+    "skills": [  ],
+    "items": {
+      "both": [ "dress_shirt", "peacoat", "dress_shoes", "pants", "socks", "knit_scarf", "res_shoggoth", "pet_carrier" ],
+      "male": [ "briefs" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "ident": "maid_and_master",
+    "name": { "male": "執事(ご主人様付)", "female": "メイド(ご主人様付)" },
+    "description": "旦那様とそのご子息を匿い車で走っていました。しかし突然飛び出してきた凶暴なゾンビと衝突し横転、旦那様は車に挟まれ身動きが取れなくなりました。辺りから無数の呻き声が聞こえてきます。「私の子を連れて逃げろ！！」最後の言いつけに従い、震えるご子息をキャリーバッグに詰め込み、地獄の底から逃げ出したのです。",
+    "points": 1,
+    "skills": [ { "level": 1, "name": "cooking" }, { "level": 1, "name": "driving" }, { "level": 2, "name": "tailor" } ],
+    "items": {
+      "both": [ "pocketwatch", "knife_butter", "maid_master_child", "man_carrier" ],
+      "male": [ "briefs", "socks", "dress_shoes", "tux" ],
+      "female": [ "panties", "bra", "stockings", "boots", "maid_dress", "maid_hat" ]
+    }
+  },
+  {
+    "type": "profession",
+    "ident": "cat_maid",
+    "name": { "male": "猫耳執事", "female": "猫耳メイド" },
+    "description": "にゃんてことだ！終末が訪れ、気が付いたら猫耳と猫尻尾が生えていました。これならご主人様に要求されても首輪以外を用意する必要は無いでしょう！",
+    "points": 4,
+    "traits": [ "PROF_NEKOMIMI", "FELINE_EARS", "TAIL_LONG", "NIGHTVISION2" ],
+    "skills": [ { "level": 3, "name": "cooking" }, { "level": 1, "name": "driving" }, { "level": 3, "name": "tailor" } ],
+    "items": {
+      "both": [ "pocketwatch", "knife_butter", "leather_collar" ],
+      "male": [ "briefs_kemo", "socks", "dress_shoes", "tux" ],
+      "female": [ "stockings_lace", "bra", "boots", "maid_dress", "cat_maid_cap" ]
+    }
+  }
+]

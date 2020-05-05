@@ -1,0 +1,29 @@
+[
+  {
+    "id": "iv_mutagen_maid_flask",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "ショゴスの血液",
+    "description": "ショゴスから採取された血液です。何も触れていないにも関わらず、緩慢な速度で血液自体が蠢いています。使用するつもりなら注射器が必要ですが...。",
+    "color": "light_green",
+    "container": "flask_glass",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "MAID" }
+  },
+  {
+    "id": "iv_mutagen_maid",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "ショゴスの血液",
+    "description": "ショゴスから採取された血液です。何も触れていないにも関わらず、緩慢な速度で血液自体が蠢いています。使用するつもりなら注射器が必要ですが...。",
+    "color": "light_green",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "MAID" }
+  },
+  {
+    "id": "mutagen_maid",
+    "copy-from": "mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "覚醒の秘薬(メイド？)",
+    "description": "Maid Pointを変質させて得られた液体です。これを摂取すると、古くから人類に備わる原初の奉仕精神を呼び覚まし、突然変異を引き起こす可能性があります。",
+    "use_action": { "type": "mutagen", "mutation_category": "MAID" }
+  }
+]

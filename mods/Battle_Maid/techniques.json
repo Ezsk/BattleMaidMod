@@ -1,0 +1,83 @@
+[
+  {
+    "type": "technique",
+    "id": "tec_maid_precise",
+    "name": "暗殺術",
+    "min_melee": 3,
+    "unarmed_allowed": true,
+    "melee_allowed": true,
+    "crit_tec": true,
+    "messages": [ "暗殺術は%sに", "<npcname>の暗殺術は%sに" ],
+    "stun_dur": 2,
+    "mult_bonuses": [
+      { "stat": "damage", "type": "bash", "scale": 1.2 },
+      { "stat": "damage", "type": "cut", "scale": 1.2 },
+      { "stat": "damage", "type": "stab", "scale": 1.2 }
+    ]
+  },
+  {
+    "type": "technique",
+    "id": "tec_maid_counter",
+    "name": "見切り(素手格闘)",
+    "min_unarmed": 5,
+    "dodge_counter": true,
+    "unarmed_allowed": true,
+    "stun_dur": 1,
+    "messages": [ "見切りは%sに", "<npcname>の見切りは%sに" ],
+    "mult_bonuses": [ { "stat": "movecost", "scale": 0.0 } ],
+    "flat_bonuses": [ { "stat": "movecost", "scale": 33 } ]
+  },
+  {
+    "type": "technique",
+    "id": "tec_maid_meleecounter",
+    "name": "見切り(周囲反撃)",
+    "min_melee": 5,
+    "dodge_counter": true,
+    "block_counter": true,
+    "melee_allowed": true,
+    "down_dur": 2,
+    "knockback_dist": 1,
+    "aoe": "spin",
+    "messages": [
+      "動きを見切り、周囲の%sたちに反撃を返した。",
+      "<npcname>動きを見切り、周囲の%sたちに反撃を返した。"
+    ],
+    "mult_bonuses": [ { "stat": "movecost", "scale": 0.0 } ],
+    "flat_bonuses": [ { "stat": "movecost", "scale": 50 } ]
+  },
+  {
+    "type": "technique",
+    "id": "tec_maid_miyage",
+    "name": "冥土の土産",
+    "min_melee": 6,
+    "melee_allowed": true,
+    "req_buffs": [ "maid_evaded_bonus" ],
+    "crit_tec": true,
+    "down_dur": 3,
+    "knockback_dist": 1,
+    "messages": [ "冥土の土産は%sに", "<npcname>の冥土の土産は%sに" ],
+    "mult_bonuses": [
+      { "stat": "damage", "type": "bash", "scale": 2.5 },
+      { "stat": "damage", "type": "cut", "scale": 2.5 },
+      { "stat": "damage", "type": "stab", "scale": 2.5 }
+    ]
+  },
+  {
+    "type": "technique",
+    "id": "tec_maid_kyusyu",
+    "name": "急襲",
+    "min_unarmed": 6,
+    "unarmed_allowed": true,
+    "crit_tec": true,
+    "req_buffs": [ "maid_moved" ],
+    "down_dur": 3,
+    "knockback_dist": 1,
+    "messages": [ "急襲は%sに", "<npcname>の急襲は%sに" ],
+    "flat_bonuses": [ { "stat": "arpen", "type": "bash", "scale": 15 } ],
+    "mult_bonuses": [
+      { "stat": "damage", "type": "bash", "scale": 3.0 },
+      { "stat": "damage", "type": "cut", "scale": 3.0 },
+      { "stat": "damage", "type": "stab", "scale": 3.0 }
+    ]
+  }
+]
