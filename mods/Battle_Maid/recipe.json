@@ -9,7 +9,7 @@
     "time": 200000,
     "reversible": false,
     "autolearn": true,
-    "tools": [ [ [ "sewing_kit", 60 ] ] ],
+    "using": [ [ "sewing_standard", 60 ] ],
     "components": [ [ [ "rag", 40 ] ] ]
   },
   {
@@ -22,7 +22,7 @@
     "time": 200000,
     "reversible": false,
     "autolearn": true,
-    "tools": [ [ [ "sewing_kit", 40 ] ] ],
+    "using": [ [ "sewing_standard", 40 ] ],
     "components": [ [ [ "rag", 20 ] ] ]
   },
   {
@@ -36,8 +36,9 @@
     "time": 120000,
     "reversible": false,
     "autolearn": true,
-    "qualities": [ { "id": "CUT", "level": 1, "amount": 1 } ],
-    "tools": [ [ [ "welder", 18 ], [ "soldering_iron", 18 ], [ "toolset", 18 ] ], [ [ "sewing_kit", 60 ] ] ],
+    "using": [ [ "sewing_standard", 60 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "tools": [ [ [ "oxy_torch", 18 ], [ "welder", 18 ], [ "welder_crude", 18 ], [ "toolset", 18 ] ] ],
     "components": [
       [ [ "maid_dress_french", 1 ] ],
       [
@@ -66,8 +67,9 @@
     "time": 120000,
     "reversible": false,
     "autolearn": true,
-    "qualities": [ { "id": "CUT", "level": 1, "amount": 1 } ],
-    "tools": [ [ [ "welder", 18 ], [ "soldering_iron", 18 ], [ "toolset", 18 ] ], [ [ "sewing_kit", 60 ] ] ],
+    "using": [ [ "sewing_standard", 60 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "tools": [ [ [ "oxy_torch", 18 ], [ "welder", 18 ], [ "welder_crude", 18 ], [ "toolset", 18 ] ] ],
     "components": [
       [ [ "maid_dress", 1 ] ],
       [ [ "cloak", 1 ] ],
@@ -96,7 +98,7 @@
     "time": 200000,
     "reversible": false,
     "autolearn": true,
-    "tools": [ [ [ "sewing_kit", 60 ] ] ],
+    "using": [ [ "sewing_standard", 60 ] ],
     "components": [ [ [ "rag", 40 ] ] ]
   },
   {
@@ -109,7 +111,7 @@
     "time": 60000,
     "reversible": false,
     "autolearn": true,
-    "tools": [ [ [ "sewing_kit", 20 ] ] ],
+    "using": [ [ "sewing_standard", 20 ] ],
     "components": [ [ [ "rag", 3 ] ] ]
   },
   {
@@ -122,7 +124,7 @@
     "time": 100000,
     "reversible": false,
     "autolearn": true,
-    "tools": [ [ [ "sewing_kit", 30 ] ] ],
+    "using": [ [ "sewing_standard", 30 ] ],
     "components": [ [ [ "rag", 8 ] ] ]
   },
   {
@@ -135,7 +137,7 @@
     "time": 80000,
     "reversible": false,
     "autolearn": true,
-    "tools": [ [ [ "sewing_kit", 30 ] ] ],
+    "using": [ [ "sewing_standard", 30 ] ],
     "components": [ [ [ "rag", 8 ] ] ]
   },
   {
@@ -148,7 +150,7 @@
     "time": 200000,
     "reversible": false,
     "autolearn": true,
-    "tools": [ [ [ "sewing_kit", 65 ] ] ],
+    "using": [ [ "sewing_standard", 65 ] ],
     "components": [ [ [ "rag", 45 ] ] ]
   },
   {
@@ -162,8 +164,9 @@
     "time": 120000,
     "reversible": false,
     "autolearn": true,
-    "qualities": [ { "id": "CUT", "level": 1, "amount": 1 } ],
-    "tools": [ [ [ "welder", 18 ], [ "soldering_iron", 18 ], [ "toolset", 18 ] ], [ [ "sewing_kit", 60 ] ] ],
+    "using": [ [ "sewing_standard", 60 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "tools": [ [ [ "oxy_torch", 18 ], [ "welder", 18 ], [ "welder_crude", 18 ], [ "toolset", 18 ] ] ],
     "components": [
       [ [ "tux", 1 ] ],
       [ [ "cloak", 1 ] ],
@@ -192,7 +195,7 @@
     "time": 20000,
     "reversible": false,
     "autolearn": true,
-    "qualities": [ { "id": "HAMMER", "level": 2, "amount": 1 } ],
+    "qualities": [ { "id": "HAMMER", "level": 2 } ],
     "components": [
       [ [ "steel_chunk", 2 ], [ "scrap", 6 ] ],
       [
@@ -216,14 +219,9 @@
     "time": 240000,
     "reversible": false,
     "autolearn": true,
-    "qualities": [ { "id": "HAMMER", "level": 3, "amount": 1 } ],
-    "tools": [
-      [ [ "tongs", -1 ] ],
-      [ [ "chisel", -1 ] ],
-      [ [ "anvil", -1 ] ],
-      [ [ "swage", -1 ] ],
-      [ [ "forge", 200 ], [ "char_forge", 40 ], [ "oxy_torch", 40 ] ]
-    ],
+    "using": [ [ "blacksmithing_standard", 4 ], [ "steel_standard", 1 ] ],
+    "qualities": [ { "id": "CHISEL", "level": 3 } ],
+    "tools": [ [ [ "swage", -1 ] ] ],
     "components": [ [ [ "steel_chunk", 2 ], [ "scrap", 6 ] ], [ [ "leather", 1 ] ] ]
   },
   {
@@ -237,14 +235,9 @@
     "time": 20000,
     "reversible": false,
     "autolearn": true,
-    "qualities": [ { "id": "HAMMER", "level": 3, "amount": 1 } ],
-    "tools": [
-      [ [ "tongs", -1 ] ],
-      [ [ "chisel", -1 ] ],
-      [ [ "anvil", -1 ] ],
-      [ [ "swage", -1 ] ],
-      [ [ "forge", 200 ], [ "char_forge", 40 ], [ "oxy_torch", 40 ] ]
-    ],
+    "using": [ [ "blacksmithing_standard", 4 ], [ "steel_standard", 1 ] ],
+    "qualities": [ { "id": "CHISEL", "level": 3 }, { "id": "HAMMER", "level": 3 } ],
+    "tools": [ [ [ "swage", -1 ] ] ],
     "components": [ [ [ "steel_chunk", 2 ], [ "scrap", 6 ] ], [ [ "2x4", 1 ], [ "stick", 2 ] ], [ [ "maid_point", 100 ] ] ]
   },
   {
@@ -258,14 +251,9 @@
     "time": 480000,
     "reversible": false,
     "autolearn": true,
-    "qualities": [ { "id": "HAMMER", "level": 3, "amount": 1 } ],
-    "tools": [
-      [ [ "tongs", -1 ] ],
-      [ [ "chisel", -1 ] ],
-      [ [ "anvil", -1 ] ],
-      [ [ "swage", -1 ] ],
-      [ [ "forge", 450 ], [ "char_forge", 90 ], [ "oxy_torch", 90 ] ]
-    ],
+    "using": [ [ "blacksmithing_standard", 4 ], [ "steel_standard", 1 ] ],
+    "qualities": [ { "id": "CHISEL", "level": 3 }, { "id": "HAMMER", "level": 3 } ],
+    "tools": [ [ [ "swage", -1 ] ] ],
     "components": [
       [ [ "steel_lump", 2 ], [ "steel_chunk", 8 ], [ "scrap", 24 ] ],
       [ [ "2x4", 1 ], [ "stick", 2 ] ],
@@ -283,14 +271,9 @@
     "time": 480000,
     "reversible": false,
     "autolearn": true,
-    "qualities": [ { "id": "HAMMER", "level": 3, "amount": 1 } ],
-    "tools": [
-      [ [ "tongs", -1 ] ],
-      [ [ "chisel", -1 ] ],
-      [ [ "anvil", -1 ] ],
-      [ [ "swage", -1 ] ],
-      [ [ "forge", 450 ], [ "char_forge", 90 ], [ "oxy_torch", 90 ] ]
-    ],
+    "using": [ [ "blacksmithing_standard", 4 ], [ "steel_standard", 1 ] ],
+    "qualities": [ { "id": "CHISEL", "level": 3 }, { "id": "HAMMER", "level": 3 } ],
+    "tools": [ [ [ "swage", -1 ] ] ],
     "components": [
       [ [ "steel_lump", 2 ], [ "steel_chunk", 8 ], [ "scrap", 24 ] ],
       [ [ "2x4", 1 ], [ "stick", 2 ] ],
@@ -309,14 +292,9 @@
     "time": 5000,
     "reversible": false,
     "autolearn": true,
-    "qualities": [ { "id": "HAMMER", "level": 1, "amount": 1 }, { "id": "SAW_M", "level": 1, "amount": 1 } ],
-    "tools": [
-      [ [ "tongs", -1 ] ],
-      [ [ "chisel", -1 ] ],
-      [ [ "swage", -1 ] ],
-      [ [ "anvil", -1 ] ],
-      [ [ "forge", 100 ], [ "char_forge", 20 ], [ "oxy_torch", 20 ] ]
-    ],
+    "using": [ [ "blacksmithing_standard", 4 ], [ "steel_standard", 1 ] ],
+    "qualities": [ { "id": "CHISEL", "level": 3 }, { "id": "HAMMER", "level": 1 }, { "id": "SAW_M", "level": 1 } ],
+    "tools": [ [ [ "swage", -1 ] ] ],
     "components": [ [ [ "blade", 1 ] ], [ [ "spike", 1 ] ], [ [ "2x4", 2 ], [ "stick", 4 ], [ "broom", 1 ] ], [ [ "duct_tape", 100 ] ] ]
   },
   {
@@ -330,14 +308,9 @@
     "time": 360000,
     "reversible": false,
     "autolearn": true,
-    "qualities": [ { "id": "HAMMER", "level": 3, "amount": 1 }, { "id": "CUT", "level": 1, "amount": 1 } ],
-    "tools": [
-      [ [ "tongs", -1 ] ],
-      [ [ "chisel", -1 ] ],
-      [ [ "anvil", -1 ] ],
-      [ [ "swage", -1 ] ],
-      [ [ "forge", 400 ], [ "char_forge", 80 ], [ "oxy_torch", 80 ] ]
-    ],
+    "using": [ [ "blacksmithing_standard", 4 ], [ "steel_standard", 1 ] ],
+    "qualities": [ { "id": "CHISEL", "level": 3 }, { "id": "HAMMER", "level": 3 }, { "id": "CUT", "level": 1 } ],
+    "tools": [ [ [ "swage", -1 ] ] ],
     "components": [
       [ [ "bullwhip", 1 ], [ "leather", 25 ] ],
       [ [ "steel_lump", 1 ], [ "steel_chunk", 4 ], [ "scrap", 12 ] ],
@@ -355,14 +328,9 @@
     "time": 480000,
     "reversible": false,
     "autolearn": true,
-    "qualities": [ { "id": "HAMMER", "level": 3, "amount": 1 } ],
-    "tools": [
-      [ [ "tongs", -1 ] ],
-      [ [ "chisel", -1 ] ],
-      [ [ "anvil", -1 ] ],
-      [ [ "swage", -1 ] ],
-      [ [ "forge", 400 ], [ "char_forge", 80 ], [ "oxy_torch", 80 ] ]
-    ],
+    "using": [ [ "blacksmithing_standard", 4 ], [ "steel_standard", 1 ] ],
+    "qualities": [ { "id": "CHISEL", "level": 3 }, { "id": "HAMMER", "level": 3 } ],
+    "tools": [ [ [ "swage", -1 ] ] ],
     "components": [ [ [ "umbrella", 1 ], [ "teleumbrella", 1 ] ], [ [ "steel_lump", 2 ], [ "steel_chunk", 6 ], [ "scrap", 18 ] ] ]
   },
   {
@@ -376,15 +344,9 @@
     "time": 540000,
     "reversible": false,
     "autolearn": true,
-    "qualities": [ { "id": "HAMMER", "level": 3, "amount": 1 }, { "id": "CUT", "level": 1, "amount": 1 } ],
-    "tools": [
-      [ [ "tongs", -1 ] ],
-      [ [ "chisel", -1 ] ],
-      [ [ "anvil", -1 ] ],
-      [ [ "swage", -1 ] ],
-      [ [ "forge", 400 ], [ "char_forge", 80 ], [ "oxy_torch", 80 ] ],
-      [ [ "polisher", 20 ] ]
-    ],
+    "using": [ [ "blacksmithing_standard", 4 ], [ "steel_standard", 1 ] ],
+    "qualities": [ { "id": "CHISEL", "level": 3 }, { "id": "HAMMER", "level": 3 }, { "id": "CUT", "level": 1 } ],
+    "tools": [ [ [ "swage", -1 ] ] ],
     "components": [ [ [ "2x4", 2 ], [ "stick", 4 ] ], [ [ "steel_lump", 2 ], [ "steel_chunk", 6 ], [ "scrap", 18 ] ], [ [ "wax", 2 ] ] ]
   },
   {
@@ -421,7 +383,7 @@
     "time": 400000,
     "reversible": false,
     "autolearn": true,
-    "qualities": [ { "id": "CUT", "level": 1, "amount": 1 } ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [ [ [ "slime_scrap", 1 ] ], [ [ "meat", 1 ] ] ]
   },
   {
@@ -434,7 +396,7 @@
     "time": 1000,
     "reversible": false,
     "autolearn": true,
-    "qualities": [ { "id": "HAMMER", "level": 1, "amount": 1 }, { "id": "CUT", "level": 1, "amount": 1 } ],
+    "qualities": [ { "id": "HAMMER", "level": 1 }, { "id": "CUT", "level": 1 } ],
     "components": [ [ [ "meat", 1 ] ] ]
   },
   {
@@ -466,7 +428,7 @@
     "time": 200000,
     "reversible": false,
     "autolearn": true,
-    "tools": [ [ [ "sewing_kit", 60 ] ] ],
+    "using": [ [ "sewing_standard", 60 ] ],
     "components": [ [ [ "leather", 30 ] ], [ [ "rag", 25 ] ], [ [ "felt_patch", 20 ] ] ]
   },
   {
@@ -479,7 +441,7 @@
     "time": 20000,
     "reversible": false,
     "autolearn": true,
-    "tools": [ [ [ "sewing_kit", 15 ] ] ],
+    "using": [ [ "sewing_standard", 15 ] ],
     "components": [ [ [ "rag", 4 ] ] ]
   },
   {
@@ -492,7 +454,7 @@
     "time": 40000,
     "reversible": false,
     "autolearn": true,
-    "tools": [ [ [ "sewing_kit", 20 ] ] ],
+    "using": [ [ "sewing_standard", 20 ] ],
     "components": [ [ [ "rag", 5 ] ] ]
   },
   {
@@ -505,7 +467,7 @@
     "time": 60000,
     "reversible": false,
     "autolearn": true,
-    "tools": [ [ [ "sewing_kit", 30 ] ] ],
+    "using": [ [ "sewing_standard", 30 ] ],
     "components": [ [ [ "rag", 12 ] ] ]
   },
   {
@@ -518,7 +480,7 @@
     "time": 60000,
     "reversible": false,
     "autolearn": true,
-    "tools": [ [ [ "sewing_kit", 30 ] ] ],
+    "using": [ [ "sewing_standard", 30 ] ],
     "components": [ [ [ "rag", 12 ] ], [ [ "vibrator", 1 ], [ "stick", 1 ] ] ]
   },
   {
@@ -531,7 +493,7 @@
     "time": 60000,
     "reversible": false,
     "autolearn": true,
-    "tools": [ [ [ "sewing_kit", 30 ] ] ],
+    "using": [ [ "sewing_standard", 30 ] ],
     "components": [ [ [ "rag", 12 ] ], [ [ "vibrator", 1 ] ] ]
   },
   {
@@ -559,7 +521,7 @@
     "time": 25000,
     "reversible": true,
     "autolearn": true,
-    "tools": [ [ [ "sewing_kit", 18 ] ] ],
+    "using": [ [ "sewing_standard", 18 ] ],
     "components": [ [ [ "rag", 20 ], [ "cloak", 1 ] ], [ [ "maid_point", 1000 ] ] ]
   },
   {
@@ -573,15 +535,9 @@
     "time": 100000,
     "reversible": false,
     "autolearn": true,
-    "qualities": [ { "id": "HAMMER", "level": 1, "amount": 1 } ],
-    "tools": [
-      [ [ "tongs", -1 ] ],
-      [ [ "chisel", -1 ] ],
-      [ [ "swage", -1 ] ],
-      [ [ "anvil", -1 ] ],
-      [ [ "forge", 100 ], [ "char_forge", 20 ], [ "oxy_torch", 20 ] ],
-      [ [ "sewing_kit", 6 ] ]
-    ],
+    "using": [ [ "blacksmithing_standard", 4 ], [ "steel_standard", 1 ], [ "sewing_standard", 6 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 1 } ],
+    "tools": [ [ [ "swage", -1 ] ] ],
     "components": [ [ [ "spike", 5 ] ], [ [ "steel_chunk", 2 ], [ "scrap", 6 ] ], [ [ "leather", 2 ] ], [ [ "maid_point", 1400 ] ] ]
   },
   {
@@ -594,14 +550,9 @@
     "time": 120000,
     "reversible": false,
     "autolearn": true,
-    "tools": [
-      [ [ "tongs", -1 ] ],
-      [ [ "chisel", -1 ] ],
-      [ [ "swage", -1 ] ],
-      [ [ "anvil", -1 ] ],
-      [ [ "forge", 100 ], [ "char_forge", 20 ], [ "oxy_torch", 20 ] ],
-      [ [ "sewing_kit", 20 ] ]
-    ],
+    "using": [ [ "blacksmithing_standard", 4 ], [ "steel_standard", 1 ], [ "sewing_standard", 20 ] ],
+    "qualities": [ { "id": "CHISEL", "level": 3 } ],
+    "tools": [ [ [ "swage", -1 ] ] ],
     "components": [ [ [ "rag", 4 ] ], [ [ "silver_small", 1000 ] ], [ [ "maid_point", 1000 ] ] ]
   },
   {
@@ -614,7 +565,7 @@
     "time": 20000,
     "reversible": false,
     "autolearn": true,
-    "qualities": [ { "id": "CUT", "level": 1, "amount": 1 } ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "feather", -1 ] ] ],
     "components": [ [ [ "paper", 5 ] ], [ [ "sugar", 1 ] ], [ [ "stick", 1 ], [ "2x4", 1 ] ], [ [ "maid_point", 300 ] ] ]
   },
@@ -628,7 +579,7 @@
     "time": 20000,
     "reversible": false,
     "autolearn": true,
-    "qualities": [ { "id": "CUT", "level": 1, "amount": 1 } ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "feather", -1 ] ] ],
     "components": [ [ [ "paper", 5 ] ], [ [ "stick", 1 ], [ "2x4", 1 ] ], [ [ "maid_point", 100 ] ] ]
   },
@@ -670,7 +621,7 @@
     "time": 20000,
     "reversible": false,
     "autolearn": true,
-    "qualities": [ { "id": "CUT", "level": 1, "amount": 1 } ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "feather", -1 ] ] ],
     "components": [ [ [ "paper", 5 ] ], [ [ "sugar", 1 ] ], [ [ "stick", 1 ], [ "2x4", 1 ] ], [ [ "maid_point", 300 ] ] ]
   },
@@ -685,7 +636,7 @@
     "time": 100,
     "reversible": false,
     "autolearn": true,
-    "qualities": [ { "id": "COOK", "level": 1, "amount": 1 } ],
+    "qualities": [ { "id": "COOK", "level": 1 } ],
     "tools": [ [ [ "char_smoker", 40 ] ] ],
     "components": [ [ [ "meat_red_raw", 6, "LIST" ] ], [ [ "little_maid_R18", 1 ] ] ]
   },
@@ -700,7 +651,7 @@
     "time": 100,
     "reversible": false,
     "autolearn": true,
-    "qualities": [ { "id": "COOK", "level": 1, "amount": 1 } ],
+    "qualities": [ { "id": "COOK", "level": 1 } ],
     "tools": [ [ [ "char_smoker", 40 ] ] ],
     "components": [ [ [ "fish", 12 ] ], [ [ "little_maid_R18", 1 ] ] ]
   },
@@ -714,7 +665,7 @@
     "time": 15000,
     "reversible": false,
     "autolearn": true,
-    "qualities": [ { "id": "COOK", "level": 3, "amount": 1 }, { "id": "CUT", "level": 1, "amount": 1 } ],
+    "qualities": [ { "id": "COOK", "level": 3 }, { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "hotplate", 7 ], [ "char_smoker", 7 ], [ "toolset", 7 ], [ "fire", -1 ] ] ],
     "components": [ [ [ "human_flesh", 3 ], [ "meat_tainted", 3 ] ], [ [ "maid_point", 50 ] ] ]
   },
@@ -728,7 +679,7 @@
     "time": 20000,
     "reversible": true,
     "autolearn": true,
-    "qualities": [ { "id": "CUT", "level": 1, "amount": 1 }, { "id": "HAMMER", "level": 2, "amount": 1 } ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 2 } ],
     "components": [
       [ [ "stick", 1 ], [ "2x4", 1 ] ],
       [ [ "rag", 4 ] ],
@@ -747,7 +698,7 @@
     "time": 35000,
     "reversible": false,
     "autolearn": true,
-    "tools": [ [ [ "sewing_kit", 15 ] ] ],
+    "using": [ [ "sewing_standard", 15 ] ],
     "components": [ [ [ "rag", 2 ] ] ]
   },
   {
@@ -760,7 +711,7 @@
     "time": 35000,
     "reversible": false,
     "autolearn": true,
-    "tools": [ [ [ "sewing_kit", 15 ] ] ],
+    "using": [ [ "sewing_standard", 15 ] ],
     "components": [ [ [ "rag", 2 ] ] ]
   },
   {
@@ -786,7 +737,7 @@
     "time": 30000,
     "reversible": false,
     "autolearn": true,
-    "qualities": [ { "id": "CUT", "level": 1, "amount": 1 }, { "id": "HAMMER", "level": 3 } ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 3 } ],
     "using": [ [ "forging_standard", 1 ], [ "steel_tiny", 1 ] ],
     "tools": [ [ [ "feather", -1 ] ] ],
     "components": [ [ [ "sharp_rock", 1 ] ], [ [ "paper", 5 ] ], [ [ "stick", 1 ], [ "2x4", 1 ] ], [ [ "maid_point", 1400 ] ] ]
